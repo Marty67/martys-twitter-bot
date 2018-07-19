@@ -1,2 +1,2 @@
 # martys-twitter-bot
-An attempt at a twitter bot in javascript.
+A twitter bot using npm twit package.
