@@ -26,7 +26,9 @@ function tweetOfTheDay(){
 //when someone follows, sends a reply and follows them
 function whenFollowed(followEvent){
   var handle = followEvent.source.screen_name;
-  tweet('@'+handle+' is my new best friend');
+  if(handle != 'BotMort'){
+    tweet('@'+handle+' is my new best friend');
+  }
   var target = followEvent.source.id_str;
   T.post('friendships/create', { id: target }, function(err,data,response){
     console.log(data)
