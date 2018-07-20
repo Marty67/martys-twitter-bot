@@ -2,4 +2,4 @@
 
 @BotMort
 
-A twitter bot using npm twit package.
+A twitter bot using the twit npm package.
